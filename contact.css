@@ -76,16 +76,26 @@ a.link-nav {
     display: flex;
     flex-direction: row;
     width: 100%;
+    padding: 30px;
     height: max-content;
     align-items: center;
     justify-content: center;
 }
 
+.subsection {
+    display: flex;
+    flex-direction: row;
+}
+
+#left-subsection {
+    margin-right: 50px;
+}
+
 div.card {
     display: flex;
     flex-direction: column;
-    width: 15rem;
-    height: 22rem;
+    width: 250px;
+    height: 350px;
     background-image: linear-gradient(to bottom, white,rgb(243, 243, 242),rgb(112, 112, 112));
     margin-left: 50px;
     border-radius: 9px;
@@ -196,8 +206,6 @@ span#text {
 
 
 
-
-
 div.footer{
     background-color: rgba(0, 0, 0, 0.192);
     width: 100%;
@@ -214,4 +222,16 @@ div.footer{
     font-weight: 400;
     padding-right: 0.6rem;
     padding-top: 2px;
+}
+
+
+@media screen and (max-width:1100px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    #left-subsection {
+        margin-right: 0px;
+    }
+       
 }
